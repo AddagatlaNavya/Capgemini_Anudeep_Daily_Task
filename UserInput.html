@@ -6,27 +6,27 @@
 		<form>
 		<fieldset>
 			<legend align="center">
-			<header style="background-color:blue;color:Yellow;">
-			<h1>Registration Form</h1>
+			<header style="background-color:blue;color:Yellow;font-size:22px;">
+			<strong> &nbsp;&nbsp;Registration Form&nbsp;&nbsp; </strong>
 			</header>
 			</legend>
 		<div style="background-color:lightgreen;font-color:violet;">
 		<table align="center" cellpadding="10px">
 			<tr>
 				<td><label> Username: </label></td>
-				<td><input type="text"></td>
+				<td><input type="text" placeholder="How should we call you?" size="25" autofocus></td>
 			</tr>
 			<tr>
 				<td><label> Maild-id: </label></td>
-				<td><input type="email"></td>
+				<td><input type="email" placeholder="Enter your email" size="25"></td>
 			</tr>
 			<tr>
 				<td><label> Contact No.: </label></td>
-				<td><input type="number"></td>
+				<td><input type="tel" placeholder="987-456-3210" size="25" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></td>
 			</tr>
 			<tr>
 				<td><label> D.O.B.: </label></td>
-				<td><input type="date"></td>
+				<td><input type="datetime-local"></td>
 			</tr>
 			<tr>
 				<td> <label> Gender: </label> </td>
@@ -43,11 +43,38 @@
 				</td>
 			</tr>
 			<tr>
+				<td><label> Nationality: </label> </td>
+				<td> <input list="country">
+				     <datalist id="country">
+					<option> India </option>
+					<option> America </option>
+					<option> China </option>
+					<option> Russia </option>
+				     </datalist>
+				</td>
+			</tr>
+			<tr>
+				<td> <label> Your Favourite color: </label> </td>
+				<td> <input type="color"> </td>
+			</tr>
+			<tr>
+				<td> <label> Lucky Number: </label>
+				<td> <input type="range" min="0" max="9">
+			</tr>
+			<tr>
+				<td> <label> Share your LinkedIn account: </label>
+				<td> <input type="url" placeholder="Your LinkedIn profile">
+			</tr>
+			<tr>
+				<td> <label> Upload your resume: </label>
+				<td> <input type="file"> </td>
+			</tr>
+			<tr>
 				<td> <label> Password: </label> </td>
 				<td> <input type="password"> </td>
 			</tr>
 			<tr>
-				<td> <input type="submit" value="Register"> </td>
+				<td> <input type="image" src="https://www.pikpng.com/pngl/m/96-965166_info-button1-register-button1-register-button-green-png.png" height="50" width="100"> </td>
 				<td> <input type="reset"> </td>
 			</tr>
 		</table>
