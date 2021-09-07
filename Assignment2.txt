@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Assignment2 </title>
+		<meta characterset="UTF-8">
+		<meta name="Navya" content="Assignment">
+		<meta name="description" content="This is second assignment. It include links and image tags.">
+		<style>
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 align="center"> Coffee </h1>
+			<hr>
+		</header>
+		<div>
+			<p> <b> Coffee </b> is a brewed drink prepared from roasted coffee beans, the seeds of berries from 
+			certain 
+			<a href="https://en.wikipedia.org/wiki/Coffee_bean#Coffee_plant">
+				<i>Coffea</i>
+			</a> species. The genus Coffea is native to tropical Africa (specifically having 
+			its origin in Ethiopia and Sudan) and Madagascar, the Comoros, Mauritius, and Réunion 
+			in the Indian Ocean. Dried coffee seeds (referred to as <q>beans</q>) are roasted to varying 
+			degrees, depending on the desired flavor. Roasted beans are ground and then brewed 
+			with near-boiling water to produce the beverage known as coffee.
+			</p>
+			<p> Coffee</p>
+			<ol type="1">
+				<li> <a href="">Roasting>/a> </li>
+				<li> Storage </li>
+			</ol>
+		</div>
+	</body>
+</html>		
