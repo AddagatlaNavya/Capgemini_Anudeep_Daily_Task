@@ -15,12 +15,13 @@
 				
 			}
 			input{
-				color:dodgerblue;
 				border:none;
-				border-bottom: 2px solid dodgerblue;
+				border-bottom: 2px solid lightgrey;
 				outline:none;
 				line-height:50px;
-				
+				} 
+			input:selected{
+				border-bottom: 2px solid dodgerblue;
 				}
 			.b1{
 				background-color:dodgerblue;
@@ -29,8 +30,10 @@
 				outline:none;
 				border:none;
 				border-radius:50px;
-				height:50px;
-				width:300px;
+				padding:0px 130px;
+				}
+			.b1:hover{
+				background-color:dodgerblue;
 				}
 			.b2{
 				color:dodgerblue;
@@ -40,25 +43,28 @@
 				height:50px;
 				width:300px;
 				}
-			*{
-				background-color:white;
+			a{
+				text-decoration:none;
+				}
+			a:visited{
+				color:dodgerblue;
 				}
 		</style>
 	</head>
-	<body>
+	<body bgcolor="white">
 		<div class="mydiv">
 				<form align="center">
 					<h1 class="hd1"> <b>yahoo<i>!</i></b> </h1>
 					<p><b>Sign in to Yahoo Mail</b> <br>Sign in using your Yahoo account </p>
-					<input type="text" placeholder="Username, email address or mobile number" size="40">
+					<input type="text" placeholder="Username, email address or mobile number" size="40" autofocus>
 					<br><br>
 					<a href="https://login.yahoo.com/account/challenge/password?pspid=159600001&activity=mail-direct&.lang=en-IN&.intl=in&src=ym&done=https%3A%2F%2Fin.mail.yahoo.com%2Fd&sessionIndex=Qw--&acrumb=bVbsZdDn&display=login&authMechanism=primary">
 					<input type="submit" value="Next" class="b1">
 					</a>
 					<br><br>
-					<input type="checkbox" checked>Stay signed in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fogotten username?
+					<input type="checkbox" checked>Stay signed in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://login.yahoo.com/account/challenge/username?.intl=in&.lang=en-IN&src=ym&activity=mail-direct&pspid=159600001&done=https%3A%2F%2Fin.mail.yahoo.com%2Fd&authMechanism=secondary&sessionIndex=Qw--">Fogotten username?</a>
 					<br><br><br><br><br><br>
-					<button class="b2">Create an account </button>
+					<button class="b2"><a href="https://login.yahoo.com/account/create?.intl=in&.lang=en-IN&src=ym&activity=mail-direct&pspid=159600001&.done=https%3A%2F%2Fin.mail.yahoo.com%2Fd&specId=yidReg&done=https%3A%2F%2Fin.mail.yahoo.com%2Fd">Create an account </a></button>
 				</form>
 		</div>
 	</body>
