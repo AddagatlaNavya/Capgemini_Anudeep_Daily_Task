@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> First JS</title>
+		<link href="first.js" rel="script">
+		<script src="first.js"></script>
+		<script>
+			document.write("<h2>Welcome to internal JS fom Head");
+		</script>
+	</head>
+	<body>
+		<h2 id="type2"></h2>
+		<script>
+			document.write("<h2>Welcome to internal JS fom body</h2>");
+			document.getElementById("type2").innerHTML="Inner HTML";
+			alert("Welcome to My world of JS");	
+			console.log("Navya Addagatla");
+		</script>
+		<script src="first.js"></script>
+		<script>
+			document.write("Variables");
+			var an="Navya";
+			if(true){
+				let an="Addagatla";
+				document.write("<br><br>"+an);
+			}
+			document.write(an);
+		</script>
+</html>

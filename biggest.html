@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<title> Biggest Number</title>
+	</head>
+	<body>
+		<script>
+			var a=1,b=2,c=3,d=4;
+			((a>b)&&(a>c))?document.write(a+" is biggest among"+a+", "+b+"and "+c)
+				:(b>c)?document.write(b+" is biggest among"+a+", "+b+"and "+c)
+				:document.write(c+" is biggest among"+a+", "+b+"and "+c);
+			document.write("<br>");
+			((a>b)&&(a>c)&&(a>d))?document.write(a+" is biggest among"+a+", "+b+", "+c+"and "+d)
+				:((b>c)&&(b>d))?document.write(b+" is biggest among"+a+", "+b+", "+c+"and "+d)
+				:(c>d)?document.write(c+" is biggest among"+a+", "+b+", "+c+"and "+d)
+				:document.write(d+" is biggest among"+a+", "+b+", "+c+"and "+d);
+		</script>
+	</body>
+</html>

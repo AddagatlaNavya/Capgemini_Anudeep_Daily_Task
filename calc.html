@@ -1,0 +1,94 @@
+<html>
+	<head>
+   	 <style>
+    		.maindiv{
+       		 padding: 6%;
+       		 border: 2px solid black;
+      		 height: 250px;
+    	         width: 300px;
+   		 margin-left:400px ;
+        	 margin-top: 10px;
+    
+    		}
+       
+    	</style>
+
+ 
+	</head>
+	<body>
+		<script  type="text/javascript" >
+
+        	function Calc(){
+            		var clas = document.getElementById("selid").value;
+            		var notck = document.querySelector('input[name="radio"]:checked').value;
+            		if (notck.length == ""){
+               			 alert("No Radio button has been selected");
+           		 }
+           		 var result = clas*notck;
+    
+           		 document.getElementById("respone").innerHTML(result);
+    
+      			  };
+           
+      		  function Submit(){
+    
+         		   var user = document.getElementsByClassName("usernameid").value;
+          		  var pass = document.getElementById("passwordid").value;
+           		 if (user.length == "" || pass.length == ""){
+              		  alert("No username or password  has been provided");
+            		}
+          	 	 if (user == "arshad " && pass == user.substring(0,2)+"123")
+			{
+               
+                		document.getElementById("response").innerHTML("The Details has been submitted sucessfully");
+    
+            		}
+      		  }
+        	</script>
+		<div class="maindiv">
+		<h1>Movie Registration</h1>
+		<label for="username">Username</label>
+		&nbsp;
+		<input type="text" name="username" class="usernameid"  placeholder=" Enter the Username">
+		<br>
+		<br>
+		<label for="password">Password</label>
+		&nbsp;
+		<input type="password" name="password" id="passwordid" placeholder="Enter the Password">
+		<br>
+		<br>
+		<label >Class</label>
+		 &nbsp;&nbsp;
+		<select id="selid">
+    			<option value="350">Platinium</option>
+   			<option value="250">Diamond</option>
+    			<option value="150">Gold</option>
+   			<option value="100">Silver</option>
+		</select>
+		<br>
+		<br>
+		<label for="">Number of Ticket</label>
+		<br><br>
+		<input type="radio" id = "radioid" value="1" name="radio">
+		<label for="">1</label>
+		<input type="radio" id = "radioid" value="2" name="radio">
+		<label for="">2</label>
+		<input type="radio" id = "radioid" value="3" name="radio">
+		<label for="">3</label>
+		<input type="radio" id = "radioid" value="4" name="radio">
+		<label for="">4</label>
+		<input type="radio" id = "radioid" value="5" name="radio">
+		<label for="">5</label>
+		<input type="radio" id = "radioid" value="6" name="radio">
+		<label for="">6</label>
+		<br>
+		<br>
+		<br>
+		<button id="submitid" onclick="Submit();">Submit</button>
+		&nbsp;&nbsp; &nbsp;&nbsp;
+		<button id="Calid" onclick="calc();">Calculate</button>
+		<br
+		<label id="response"></label>
+		</div>
+	</body>
+</html>
