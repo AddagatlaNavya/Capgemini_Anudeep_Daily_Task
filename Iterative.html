@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Iterative satements</title>
+	</head>
+	<body>
+		<h1>For:</h1>
+		<script>
+			document.write("Even numbers");
+				var n=12;
+				for(var i=0;i<=n;i++){
+					if(i%2==0){
+						document.write(i+"<br>");
+					}
+				}
+				document.write("Prime Numbers:<br>");
+				var n=2,count=0;
+				for(var i=1;i<=n;i++){
+					if(n%i==0){
+						count++;
+					}
+				}
+				if(count==2){
+					document.write(n+" is prime number");
+				}
+				else{document.write(n+" is not a prime number");}
+				document.write("<h1>For-of:</h1>");
+				var ar=["Nav", "Srav", "Giri"];
+				for(let x of ar){
+					document.write(x+" ")
+				}
+		</script>
+	</body>
+</html>
